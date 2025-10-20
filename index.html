@@ -15,8 +15,12 @@
             border-bottom: 2px solid #ccc;
             padding-bottom: 10px;
         }
-        .cv-link-container {
+        .section-container {
             margin: 30px 0;
+            padding: 20px;
+            background-color: #fff; /* Fundo branco para a seção */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .cv-button {
             display: inline-block;
@@ -24,14 +28,31 @@
             margin-top: 15px;
             background-color: #007bff; /* Azul vibrante */
             color: white;
-            text-decoration: none; /* Remove o sublinhado */
-            font-size: 1.2em; /* Fonte maior */
-            font-weight: bold; /* Negrito */
-            border-radius: 5px; /* Cantos arredondados */
-            transition: background-color 0.3s ease; /* Efeito de transição suave */
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .cv-button:hover {
-            background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+            background-color: #0056b3; 
+        }
+
+        /* ESTILO PARA O NOVO BOTÃO DO POWER BI */
+        .powerbi-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 15px;
+            background-color: #00a187; /* Verde do Power BI */
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .powerbi-button:hover {
+            background-color: #007d67; /* Verde mais escuro ao passar o mouse */
         }
         .github-link {
             margin-top: 20px;
@@ -44,7 +65,18 @@
     <h1>Bem-vindo ao Meu Portfólio Digital!</h1>
     <p>Este site está no ar usando o GitHub Pages. Em breve, você encontrará aqui meus projetos e trabalhos em destaque. </p>
     
-    <div class="cv-link-container">
+    <div class="section-container">
+        <h2>📊 Análise de Dados e BI</h2>
+        <p>Confira meu painel interativo de análise de dados desenvolvido no Power BI:</p>
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiNzA4ZTIyOGYtZmU1Zi00ZGFkLThlYWQtODgzNzI2Yzk0MDZjIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" 
+           class="powerbi-button" 
+           target="_blank">
+            VER PROJETO POWER BI ONLINE
+        </a>
+    </div>
+
+    <div class="section-container">
+        <h2>📋 Documentação Profissional</h2>
         <p>Acesse minha experiência profissional completa:</p>
         <a href="CV Eduardo Pereira da Silva.pdf" class="cv-button" target="_blank">
             BAIXAR/VISUALIZAR CURRÍCULO COMPLETO (PDF)
